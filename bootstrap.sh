@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # update the system
-dnf update -y
+/usr/bin/apt update -y
+/usr/bin/apt upgrade -y
 
 # install required packages
-dnf install -y python3
-dnf install -y git
-dnf install -y nginx
+/usr/bin/apt install -y python3
+/usr/bin/apt install -y git
+/usr/bin/apt install -y nginx
 
 # enable nginx so it runs on boot
-systemctl start nginx
-systemctl enable nginx
+/usr/bin/systemctl start nginx
+/usr/bin/systemctl enable nginx
